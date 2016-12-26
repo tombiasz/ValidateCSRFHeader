@@ -36,6 +36,7 @@ return array(
         'request'=>array(
             'enableCookieValidation'=>true,
             'enableCsrfValidation'=>true,
+            'class'=>'application.components.HttpRequest', // CUSTOM CLASS
         ),
 
         'user'=>array(
