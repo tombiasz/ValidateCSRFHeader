@@ -52,6 +52,7 @@ return array(
                 array('site/index', 'pattern'=>'', 'verb'=>'GET'),
                 array('site/post', 'pattern'=>'post', 'verb'=>'POST'),
                 array('site/delete', 'pattern'=>'delete', 'verb'=>'DELETE'),
+                array('site/patch', 'pattern'=>'patch', 'verb'=>'PATCH'),
 
                 // '<controller:\w+>/<id:\d+>'=>'<controller>/view',
                 // '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',

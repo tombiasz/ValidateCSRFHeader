@@ -39,6 +39,16 @@
             </button>
         </p>
 
+        <p>
+            <button onClick="sendRequest('PATCH', 'site/patch', true)">
+                Send valid PATCH request
+            </button>
+
+            <button onClick="sendRequest('PATCH', 'site/patch', false)">
+                Send invalid PATCH request
+            </button>
+        </p>
+
         <script src="<?php echo Yii::app()->getBaseUrl(); ?>/js/axios.min.js"></script>
         <script>
             function sendRequest(method, url, validCSRF) {

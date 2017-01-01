@@ -35,4 +35,10 @@ class SiteController extends Controller
         $this->renderJSON(array('msg'=> $msg));
     }
 
+    public function actionPatch()
+    {
+        $msg = "valid PATCH request";
+        $this->renderJSON(array('msg'=> $msg));
+    }
+
 }
