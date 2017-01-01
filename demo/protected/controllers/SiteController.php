@@ -41,4 +41,10 @@ class SiteController extends Controller
         $this->renderJSON(array('msg'=> $msg));
     }
 
+    public function actionPut()
+    {
+        $msg = "valid PUT request";
+        $this->renderJSON(array('msg'=> $msg));
+    }
+
 }

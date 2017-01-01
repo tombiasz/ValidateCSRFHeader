@@ -49,6 +49,16 @@
             </button>
         </p>
 
+        <p>
+            <button onClick="sendRequest('PUT', 'site/put', true)">
+                Send valid PUT request
+            </button>
+
+            <button onClick="sendRequest('PUT', 'site/put', false)">
+                Send invalid PUT request
+            </button>
+        </p>
+
         <script src="<?php echo Yii::app()->getBaseUrl(); ?>/js/axios.min.js"></script>
         <script>
             function sendRequest(method, url, validCSRF) {
