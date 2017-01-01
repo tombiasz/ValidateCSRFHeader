@@ -1,13 +1,32 @@
-# ValidateCSRFHeader
-Yii 1.1.x custom HttpRequest class implementing CSRF header validation for XMLHttpRequest.
+Yii 1.1.x CSRF Header validation
+================================
+
+Yii 1.1.x custom HttpRequest class implementing CSRF header validation for XMLHttpRequest. This was written and tested with Yii 1.1.17 and PHP 5.6, but should easly work with previous versions.
 
 INSTALLATION
 ------------
-Copy HttpRequest.php file to protected/components/ directory of your application.
+Copy *HttpRequest.php* file to *protected/components/* directory of your application.
 
-REQUIREMENTS
-------------
-This was written and tested with Yii 1.1.17 and PHP 5.6, but should easly work with previous versions.
+In your main config file
+
+    protected/config/main.php
+    
+enable CSRF validation and point Yii to use custom class
+
+    [...]
+    'request'=>array(
+        'enableCookieValidation'=>true,
+        'enableCsrfValidation'=>true,
+        'class'=>'application.components.HttpRequest', // CUSTOM CLASS
+    ),
+    [...]
+
+Enabling cookie validation (*enableCookieValidation*) is optional.
+
+For reference, see:
+
+    demo/protected/config/main.php
+
 
 DEMO
 ----
