@@ -29,6 +29,16 @@
             </button>
         </p>
 
+        <p>
+            <button onClick="sendRequest('DELETE', 'site/delete', true)">
+                Send valid DELETE request
+            </button>
+
+            <button onClick="sendRequest('DELETE', 'site/delete', false)">
+                Send invalid DELETE request
+            </button>
+        </p>
+
         <script src="<?php echo Yii::app()->getBaseUrl(); ?>/js/axios.min.js"></script>
         <script>
             function sendRequest(method, url, validCSRF) {

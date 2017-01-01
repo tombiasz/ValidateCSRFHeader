@@ -29,4 +29,10 @@ class SiteController extends Controller
         $this->renderJSON(array('msg'=> $msg));
     }
 
+    public function actionDelete()
+    {
+        $msg = "valid DELETE request";
+        $this->renderJSON(array('msg'=> $msg));
+    }
+
 }
