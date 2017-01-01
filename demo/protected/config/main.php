@@ -18,17 +18,7 @@ return array(
         'application.components.*',
     ),
 
-    'modules'=>array(
-        // uncomment the following to enable the Gii tool
-        /*
-        'gii'=>array(
-            'class'=>'system.gii.GiiModule',
-            'password'=>'Enter Your Password Here',
-            // If removed, Gii defaults to localhost only. Edit carefully to taste.
-            'ipFilters'=>array('127.0.0.1','::1'),
-        ),
-        */
-    ),
+    'modules'=>array(),
 
     // application components
     'components'=>array(
@@ -54,15 +44,8 @@ return array(
                 array('site/delete', 'pattern'=>'delete', 'verb'=>'DELETE'),
                 array('site/patch', 'pattern'=>'patch', 'verb'=>'PATCH'),
                 array('site/put', 'pattern'=>'put', 'verb'=>'PUT'),
-
-                // '<controller:\w+>/<id:\d+>'=>'<controller>/view',
-                // '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-                // '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
             ),
         ),
-
-        // database settings are configured in database.php
-        // 'db'=>require(dirname(__FILE__).'/database.php'),
 
         'errorHandler'=>array(
             // use 'site/error' action to display errors
@@ -76,12 +59,6 @@ return array(
                     'class'=>'CFileLogRoute',
                     'levels'=>'error, warning',
                 ),
-                // uncomment the following to show log messages on web pages
-                /*
-                array(
-                    'class'=>'CWebLogRoute',
-                ),
-                */
             ),
         ),
     ),
