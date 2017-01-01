@@ -21,41 +21,41 @@
 
         <p>
             <button onClick="sendRequest('POST', 'site/post', true)">
-                Send valid POST request
+                Send POST request with CSRF header
             </button>
 
             <button onClick="sendRequest('POST', 'site/post', false)">
-                Send invalid POST request
+                Send POST request without CSRF header
             </button>
         </p>
 
         <p>
             <button onClick="sendRequest('DELETE', 'site/delete', true)">
-                Send valid DELETE request
+                Send DELETE request with CSRF header
             </button>
 
             <button onClick="sendRequest('DELETE', 'site/delete', false)">
-                Send invalid DELETE request
+                Send DELETE request without CSRF header
             </button>
         </p>
 
         <p>
             <button onClick="sendRequest('PATCH', 'site/patch', true)">
-                Send valid PATCH request
+                Send PATCH request with CSRF header
             </button>
 
             <button onClick="sendRequest('PATCH', 'site/patch', false)">
-                Send invalid PATCH request
+                Send PATCH request without CSRF header
             </button>
         </p>
 
         <p>
             <button onClick="sendRequest('PUT', 'site/put', true)">
-                Send valid PUT request
+                Send PUT request with CSRF header
             </button>
 
             <button onClick="sendRequest('PUT', 'site/put', false)">
-                Send invalid PUT request
+                Send PUT request without CSRF header
             </button>
         </p>
 
